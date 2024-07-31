@@ -6,4 +6,5 @@
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [ring/ring-core "1.12.2"]
                  [ring/ring-jetty-adapter "1.7.1"]]
-  :repl-options {:init-ns clojure-todo-app.core})
+  :repl-options {:init-ns clojure-todo-app.core}
+  :main ^:skip-aot clojure-todo-app.core )
