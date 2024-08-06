@@ -8,7 +8,6 @@
                  [ring/ring-core "1.7.1"]
                  [ring/ring-json "0.5.1"]
                  [ring/ring-jetty-adapter "1.7.1"]
-                 [com.github.seancorfield/next.jdbc "1.3.939"]
-                 [org.xerial/sqlite-jdbc "3.43.0.0"]]
+                 [hiccup "2.0.0-RC3"]]
   :repl-options {:init-ns clojure-todo-app.core}
   :main ^:skip-aot clojure-todo-app.core )

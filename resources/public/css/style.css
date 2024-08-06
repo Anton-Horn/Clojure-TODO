@@ -1,0 +1,27 @@
+.no-todos {
+    text-align: center;
+}
+
+.todo-item {
+    display: block;
+    margin: 10px 0 10px 0;
+}
+
+.todo-label {
+    display: inline;
+}
+
+.todo-edit-input {
+    margin-top: 20px;
+}
+
+.todo-edit, .todo-delete, .todo-edit-cancel {
+    margin-left: 8px;
+    font-size: 18px;
+    color: var(--pico-secondary);
+    cursor: pointer;
+}
+
+.todo-edit:hover, .todo-delete:hover, .todo-edit-cancel:hover {
+    color: var(--pico-primary);
+}
