@@ -171,3 +171,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetchTodos();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    function updateStatistics() {
+        fetch("/statistics")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("total").textContent = data.total;
+                document.getElementById("completed").textContent = data.completed;
+                document.getElementById("pending").textContent = data.pending;
+            })
+            .catch(error => console.error("Error fetching statistics:", error));
+    }
+
+    updateStatistics();
+
+    setInterval(updateStatistics, 3000);
+});

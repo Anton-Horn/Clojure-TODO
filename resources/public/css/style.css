@@ -25,3 +25,7 @@
 .todo-edit:hover, .todo-delete:hover, .todo-edit-cancel:hover {
     color: var(--pico-primary);
 }
+
+.statistics {
+    text-align: center;
+}
