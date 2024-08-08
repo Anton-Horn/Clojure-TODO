@@ -40,7 +40,7 @@
   [todo]
   (if (valid-todo? todo)
     (let [id (next-id)
-          new-todo (->Todo id (:title todo) (:completed todo))]
+          new-todo (Todo. id (:title todo) (:completed todo))]
       (swap! todos conj new-todo)
       (status (response nil) 204))
     (status (response {:error "Invalid Todo format"}) 400)))
